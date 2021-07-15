@@ -9,6 +9,8 @@ class Feed extends React.Component {
 					Feed Activity:
 				</div>
 				<Post></Post>
+				<Post></Post>
+				<Post></Post>
 			</div>
 		);
 	}

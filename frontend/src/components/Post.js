@@ -35,7 +35,7 @@ class Post extends React.Component {
 	}
 }`;
 		return (
-			<div className={`bg-gray-500 mx-16 py-5 rounded-xl shadow-md overflow-hidden relative ${this.state.isPostExpanded ? "max-h-full" : " max-h-72"}`}>
+			<div className={`bg-gray-500 mx-16 mb-10 py-5 rounded-xl shadow-md overflow-hidden relative ${this.state.isPostExpanded ? "max-h-full" : " max-h-72"}`}>
 				{/* Author Section */}
 				<div className="flex ml-7 grid-cols-2 justify-start">
 					<img
@@ -44,7 +44,7 @@ class Post extends React.Component {
 						alt="John Doe"
 					/>
 					<div className="grid grid-rows-2 ml-4">
-						<span className="text-white">@JohnDoe</span>
+						<span className="text-white">@<a className="hover:text-gray-300" href="./#">JohnDoe</a></span>
 						<Moment className="text-gray-700" unix>{198784740}</Moment>
 					</div>
 				</div>
