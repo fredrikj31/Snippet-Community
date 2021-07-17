@@ -10,14 +10,13 @@ class SuccessToast extends React.Component {
 	}
 
 	closeToast = () => {
-		console.log("Hej");
 		this.setState({ show: false });
 	};
 
 	render() {
 		if (this.state.show === true) {
 			return (
-				<div className="fixed bottom-16 right-16">
+				<div className="fixed top-16 right-16">
 					<div className="flex bg-white dark:bg-gray-800 w-full mx-auto overflow-hidden rounded-lg shadow-lg">
 						<div className="flex items-center justify-center w-12 bg-green-500 text-white">
 							<FontAwesomeIcon
